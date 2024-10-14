@@ -1,0 +1,185 @@
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Las mejores galletas caseras hechas con amor y dedicación.">
+    <title>Delicias de Galletas</title>
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        /* General */
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+            color: #444;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #ffd1dc;
+            color: #6b4226;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 4rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            font-style: italic;
+            color: #6b4226;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #f28a5f;
+            margin-bottom: 50px;
+        }
+
+        /* Sección de galletas */
+        .galletas {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .galleta-item {
+            background-color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .galleta-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .galleta-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 3px solid #ffd1dc;
+            max-width: 300px;
+        }
+
+        .galleta-item h3 {
+            font-size: 1.8rem;
+            color: #6b4226;
+            margin: 20px 0;
+        }
+
+        .galleta-item p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* Botón de acción */
+        .galleta-item .btn {
+            display: block;
+            background-color: #f28a5f;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .galleta-item .btn:hover {
+            background-color: #f7b38a;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #ffd1dc;
+            color: #6b4226;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 50px;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            header p {
+                font-size: 1.3rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            .galleta-item img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicias de Galletas</h1>
+        <p>Una dulce experiencia en cada mordisco</p>
+    </header>
+
+    <div class="container">
+        <h2>Nuestras Galletas Más Populares</h2>
+        <div class="galletas">
+            <div class="galleta-item">
+                <img src="data:image/jpeg;base64,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" alt="Galletas de Chocolate">
+                <h3>Galletas de Chocolate</h3>
+                <p>Disfruta de la cremosidad del mejor chocolate en cada mordida.</p>
+                <a href=file:///C:/Users/danie/OneDrive/Escritorio/Nueva%20carpeta/GALLETAS%20DE%20CHOCOLATES.html class="btn">Ver más</a>
+            </div>
+            <div class="galleta-item">
+                <img src="data:image/jpeg;base64,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" alt="Galletas de Avena">
+                <h3>Galletas de Avena</h3>
+                <p>Sabrosas y nutritivas, hechas con avena integral.</p>
+                <a href=file:///C:/Users/danie/OneDrive/Escritorio/Nueva%20carpeta/GALLETAS%20DE%20AVENA.html class="btn">Ver más</a>
+            </div>
+            <div class="galleta-item">
+                <img src="https://png.pngtree.com/png-clipart/20230928/original/pngtree-vanilla-cookies-png-illustration-png-image_13162037.png" alt="Galletas de Vainilla">
+                <h3>Galletas de Vainilla</h3>
+                <p>Un clásico delicioso con el toque perfecto de vainilla.</p>
+                <a href=file:///C:/Users/danie/OneDrive/Escritorio/Nueva%20carpeta/GALLETAS%20DE%20VAINILLA.html class="btn">Ver más</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>DALE UN BUEN SABOR A TU PALADAR</p>
+    </footer>
+</body>
+</html>
